@@ -2,8 +2,10 @@ package Java_PonteParaOMercado.service;
 
 import java.util.List;
 
+import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import Java_PonteParaOMercado.dto.ProdutoRequest;
 import Java_PonteParaOMercado.dto.ProdutoResponse;
@@ -17,9 +19,12 @@ public class ProdutoService {
 	@Autowired
 	ProdutoRepository produtoRepository;
 	
+	@Transactional
 	public ProdutoResponse salvarProduto(ProdutoRequest produtoRequest) {
 		Produto produto = ProdutoConvert.toEntity(produtoRequest);
-		return ProdutoConvert.toResponse(produtoRepository.save(produto));
+		produtoRepository.save(produto);
+
+	    return ProdutoConvert.toResponse(produto);
 		
 	}
 	
