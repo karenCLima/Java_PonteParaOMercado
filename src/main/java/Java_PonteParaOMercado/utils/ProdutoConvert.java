@@ -3,8 +3,7 @@ package Java_PonteParaOMercado.utils;
 import java.util.ArrayList;
 import java.util.List;
 
-import Java_PonteParaOMercado.dto.ProdutoRequest;
-import Java_PonteParaOMercado.dto.ProdutoResponse;
+import Java_PonteParaOMercado.dto.*;
 import Java_PonteParaOMercado.model.Produto;
 
 public class ProdutoConvert {

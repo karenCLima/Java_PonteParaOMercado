@@ -23,16 +23,17 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	
-	@Column(nullable = false)
+	
+	@Column(name = "nome")
 	private String nome;
 	
-	@Column(nullable = false)
+	@Column(name = "marca")
 	private String marca;
 	
-	@Column(nullable = false)
+	@Column(name = "preco")
 	private BigDecimal preco;
 	
-	@Column(nullable = false)
+	@Column(name = "descricao")
 	private String descricao;
 
 }
