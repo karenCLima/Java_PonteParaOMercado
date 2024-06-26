@@ -1,6 +1,6 @@
 package Java_PonteParaOMercado.controller;
 
-<<<<<<< HEAD
+
 import java.net.URI;
 import java.util.List;
 
@@ -52,8 +52,5 @@ public class ProdutoController {
 	public void deleteProduto(@PathVariable Integer id) {
 		produtoService.deletarProduto(id);
 	}
-=======
-public class ProdutoController {
 
->>>>>>> 8e245b7a39177f49717e3a0b4a51419c1f7e25eb
 }
