@@ -50,7 +50,7 @@ Esse Projeto é uma parceria da ProsperTech e TreinaWeb focado em desenvolver pe
     
     {
       "name": "String",
-      "preco": "BigDecimal", 
+      "preco": BigDecimal, 
       "marca": "String", 
       "descricao": "String"
     }
@@ -104,10 +104,12 @@ Esse Projeto é uma parceria da ProsperTech e TreinaWeb focado em desenvolver pe
 
   <details>
     <summary> Atualização (PUT) </summary>
-    <br>
+    <br>  
+     
   | Método | Funcionalidade | URL |
   |---|---|---|
-  | `PUT` | Atualiza as informações de um produto existente | `http://localhost:8080/produto/{id}`
+  | `PUT` | Atualiza um produto existente | `http://localhost:8080/produto/{id}`    
+  
   
   <details>
     
@@ -119,7 +121,7 @@ Esse Projeto é uma parceria da ProsperTech e TreinaWeb focado em desenvolver pe
       "name": "Novo nome produto",
       "preco": 3500,
       "marca": "Lenovo",
-      "descricao": "Notebbok"
+      "descricao": "Notebook"
     }
   
   </details>
