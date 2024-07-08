@@ -20,6 +20,7 @@ services:
     ports:
       - "3306:3306"
     volumes:
+      - ./mysql/my.cnf:/etc/my.cnf
       - mysql-data:/var/lib/mysql
     networks:
       - app-network
