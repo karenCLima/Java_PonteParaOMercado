@@ -24,16 +24,24 @@ Esse Projeto é uma parceria da ProsperTech e TreinaWeb focado em desenvolver pe
    git clone https://github.com/karenCLima/Java_PonteParaOMercado.git
    cd Java_PonteParaOMercado
    ```
-2. Faça o build da imagem da aplicação e depois suba o docker-compose
+2. Entre na pasta que você acabou de clonar e instale as dependências
+   ```
+   mvn install
+   ```   
+3. Faça o build da imagem da aplicação e depois suba o docker-compose
    ```
    docker build -t meuapp-springboot .
    docker-compose up -d
    ```
-3. Visualize a interface da API utilizando o Thunder Client, Postman, Insomnia ou outra plataforma de sua preferência <br>
+4. Visualize a interface da API utilizando o Thunder Client, Postman, Insomnia ou outra plataforma de sua preferência <br>
 > **Acesso ao Swagger UI (Opcional)** <br>
    Se preferir, você pode explorar e testar os endpoints da API acessando o Swagger UI. <br>
    Certifique-se de que o projeto esteja em execução e acesse a URL abaixo pelo seu navegador: <br>
    http://localhost:8080/swagger-ui/index.html#/
+5. Caso ocorra algum erro tente fazer um mvn clean e repita o passo 3
+   ```
+   mvn clean package
+   ```
 
 ## 📚 Documentação (endpoints)
 ### :bust_in_silhouette: Produto
